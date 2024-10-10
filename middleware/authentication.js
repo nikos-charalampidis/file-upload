@@ -18,6 +18,10 @@ const auth = async (req, res, next) => {
     console.log("oi");
     console.log("oi");
     console.log("oi");
+    console.log("oi");
+    console.log("oi");
+    console.log("oi");
+    console.log("oi");
     next()
   } catch (error) {
     throw new UnauthenticatedError('Authentication invalid')
@@ -36,6 +40,10 @@ const auth2 = async (req, res, next) => {
     const payload = jwt.verify(token, process.env.JWT_SECRET)
     // attach the user to the job routes
     req.user = { userId: payload.userId, name: payload.name }
+    console.log("oi");
+    console.log("oi");
+    console.log("oi");
+    console.log("oi");
     console.log("oi");
     console.log("oi");
     console.log("oi");
