@@ -8,6 +8,7 @@ function arrayMultiplication(arr1, arr2) {
       result.push(arr1[i] * arr2[i]);
     }
     return result;
-  }
+}
+
 
 module.exports = arrayMultiplication
