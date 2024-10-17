@@ -10,5 +10,7 @@ function arrayMultiplication(arr1, arr2) {
     return result;
 }
 
+const isError = false;
+
 
 module.exports = arrayMultiplication

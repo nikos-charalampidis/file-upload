@@ -6,4 +6,8 @@ const counter = (num) => {
     }
 }
 
+const a = "";
+const b = 3;
+const myName = "watch out";
+
 module.exports = counter
