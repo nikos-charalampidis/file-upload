@@ -5,6 +5,9 @@ const counter = (num) => {
         console.log('The counter finished its usage');
     }
 }
+console.log("add empty line");
+console.log("add empty line");
+console.log("add empty line");
 
 const a = "";
 const b = 3;
