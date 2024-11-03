@@ -94,4 +94,44 @@ return `<article class="product">
  
 }
 
+async function fetchProductsCopy1 () {
+ try {
+  const {data:{products}} = await axios.get(url);
+  
+  const productsDOM = products.map((product)=>{
+return `<article class="product">
+<img src="${product.image}" alt="${product.name}" class="img"/>
+<footer>
+<p>${product.name}</p>
+<span>$${product.price}</span>
+</footer>
+</article>`
+  }).join('')
+  containerDOM.innerHTML = productsDOM
+ } catch (error) {
+  console.log(error);
+ }
+ 
+}
+
+async function fetchProductsCopy2 () {
+ try {
+  const {data:{products}} = await axios.get(url);
+  
+  const productsDOM = products.map((product)=>{
+return `<article class="product">
+<img src="${product.image}" alt="${product.name}" class="img"/>
+<footer>
+<p>${product.name}</p>
+<span>$${product.price}</span>
+</footer>
+</article>`
+  }).join('')
+  containerDOM.innerHTML = productsDOM
+ } catch (error) {
+  console.log(error);
+ }
+ 
+}
+
 fetchProducts()
