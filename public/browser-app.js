@@ -8,34 +8,22 @@ const imageInputDOM = document.querySelector('#image')
 const containerDOM = document.querySelector('.container')
 let imageValue;
 
-// imageInputDOM.addEventListener('change',(e)=>{
-//  const file = e.target.files[0];
-//  console.log(file);
-// })
-
-
-
-
-
-
-
-imageInputDOM.addEventListener('change',async (e)=>{
- const imageFile = e.target.files[0];
- const formData = new FormData();
- formData.append('image',imageFile)
- try {
-  const {data:{image:{src}}} = await axios.post(`${url}/uploads`,formData,{
-   headers:{
-    'Content-Type':'multipart/form-data'
-   }
-  })
-  imageValue = src
- } catch (error) {
-   imageValue = null
-  console.log(error);
- }
+imageInputDOM.addEventListener("change", async (e) => {
+  const imageFile = e.target.files[0];
+  const formData = new FormData();
+  formData.append('image',imageFile)
+  try {
+    const {data:{image:{src}}} = await axios.post(`${url}/uploads`,formData,{
+    headers:{
+      'Content-Type':'multipart/form-data'
+    }
+    })
+    imageValue = src
+  } catch (error) {
+    imageValue = null
+    console.log(error);
+  }
 })
-
 
 fileFormDOM.addEventListener('submit',async (e)=>{
 e.preventDefault()

@@ -27,7 +27,7 @@ app.use(express.static('./public'));
 app.use(express.json());
 app.use(fileUpload({ useTempFiles: true }));
 
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.send('<h1>File Upload Starter</h1>');
 });
 
