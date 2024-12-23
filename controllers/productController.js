@@ -1,8 +1,9 @@
 const Product = require('../models/Product');
 const { StatusCodes } = require('http-status-codes');
 
-console.log("my name is");
-console.log("nikos");
+// add violations
+const name = "nikos";
+let a;
 
 //create Product
 const createProduct = async (req, res) => {
