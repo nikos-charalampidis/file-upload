@@ -1,7 +1,8 @@
 const Product = require('../models/Product');
 const { StatusCodes } = require('http-status-codes');
 
-//test maintainability pal
+console.log("my name is");
+console.log("nikos");
 
 //create Product
 const createProduct = async (req, res) => {
