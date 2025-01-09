@@ -4,8 +4,6 @@ const CustomError = require('../errors');
 const cloudinary = require('cloudinary').v2;
 const fs = require('fs');
 
-console.log("BYE BYE CYCLOPT");
-
 const uploadProductImageLocal = async (req, res) => {
   if (!req.files) {
     throw new CustomError.BadRequestError('No File Uploaded');
