@@ -1,10 +1,6 @@
 const Product = require('../models/Product');
 const { StatusCodes } = require('http-status-codes');
 
-// add violations
-const name = "nikos";
-let a;
-
 //create Product
 const createProduct = async (req, res) => {
   const product = await Product.create(req.body);
