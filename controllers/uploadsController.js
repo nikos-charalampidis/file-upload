@@ -4,7 +4,7 @@ const CustomError = require('../errors');
 const cloudinary = require('cloudinary').v2;
 const fs = require('fs');
 
-const test = "test";
+console.log("BYE BYE CYCLOPT");
 
 const uploadProductImageLocal = async (req, res) => {
   if (!req.files) {
