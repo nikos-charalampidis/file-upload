@@ -4,4 +4,6 @@ const counter = (num) => {
     }
 }
 
+const test = "test";
+
 module.exports = counter
