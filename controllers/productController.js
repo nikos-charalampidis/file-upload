@@ -7,8 +7,6 @@ const createProduct = async (req, res) => {
   res.status(StatusCodes.CREATED).json({ product });
 };
 
-const test = "test";
-
 //get all products 
 const getAllProducts = async (req, res) => {
   const products = await Product.find({});
