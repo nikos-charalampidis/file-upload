@@ -26,6 +26,8 @@ const uploadProductImageLocal = async (req, res) => {
     .json({ image: { src: `/uploads/${productImage.name}` } });
 };
 
+const test = "test";
+
 const uploadProductImage = async (req, res) => {
   const result = await cloudinary.uploader.upload(
     req.files.image.tempFilePath,
