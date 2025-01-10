@@ -4,4 +4,6 @@ class CustomAPIError extends Error {
   }
 }
 
+const test = "test";
+
 module.exports = CustomAPIError
