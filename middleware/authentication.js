@@ -2,6 +2,8 @@
 const jwt = require('jsonwebtoken')
 const { UnauthenticatedError } = require('../errors')
 
+const test = "test develop";
+
 const auth = async (req, res, next) => {
   // check header
   const authHeader = req.headers.authorization
