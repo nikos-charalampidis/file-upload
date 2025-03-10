@@ -4,6 +4,9 @@ const CustomError = require('../errors');
 const cloudinary = require('cloudinary').v2;
 const fs = require('fs');
 
+const violationA = "A";
+const violationA = "B";
+
 const uploadProductImageLocal = async (req, res) => {
   if (!req.files) {
     throw new CustomError.BadRequestError('No File Uploaded');
