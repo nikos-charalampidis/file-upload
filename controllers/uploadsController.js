@@ -5,7 +5,6 @@ const cloudinary = require('cloudinary').v2;
 const fs = require('fs');
 
 const violationA = "A";
-const violationA = "B";
 
 console.log("test");
 
