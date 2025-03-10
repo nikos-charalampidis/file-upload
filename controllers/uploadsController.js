@@ -7,6 +7,8 @@ const fs = require('fs');
 const violationA = "A";
 const violationA = "B";
 
+console.log("test");
+
 const uploadProductImageLocal = async (req, res) => {
   if (!req.files) {
     throw new CustomError.BadRequestError('No File Uploaded');
