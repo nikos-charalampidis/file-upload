@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const var = "test";
+const vari = "test";
 
 const ProductSchema = new mongoose.Schema({
   name: {
