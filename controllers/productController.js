@@ -8,6 +8,8 @@ const createProduct = async (req, res) => {
 };
 
 const test = "test";
+const new;
+const newNew;
 
 //get all products 
 const getAllProducts = async (req, res) => {
